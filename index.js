@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 import contactRoutes from "./routes/contact.js";
 
 const app = express();
-// dotenv.config();
+dotenv.config();
 app.use(express.json({ limit: "30mb", extended: true }));
 app.use(express.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
